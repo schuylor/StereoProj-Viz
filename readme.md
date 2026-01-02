@@ -12,13 +12,7 @@ This educational tool provides an interactive 3D visualization of the **Inverse 
 
 ## 🎯 Motivation
 
-In geometric deep learning (e.g., *Normalizing Flows on Riemannian Manifolds*), we often map complex distributions from a flat space to a curved surface.
-
-Understanding this mapping requires grasping two concepts:
-1.  **Bijectivity:** Every point on the plane corresponds to a unique point on the sphere.
-2.  **Volume Distortion:** The mapping is not isometric. Points far from the origin on the plane are "squashed" when mapped near the North Pole of the sphere. This distortion must be corrected using the **Jacobian Determinant**.
-
-**StereoProj-Viz** allows you to "poke" the manifold and see the projection ray in real-time.
+In geometric deep learning, we often need to bridge the gap between Euclidean space (where standard algorithms work) and Riemannian Manifolds (where data lives).This tool visualizes the Inverse Stereographic Transform, showing how we can define a distribution on a flat plane ($\mathbb{R}^2$) and "wrap" it onto a curved sphere ($S^2$). Since the mapping is bijective, understanding this geometry is crucial for both:Generation: Mapping latent variables from plane to sphere.Inference: Projecting spherical data back to the plane for density estimation.
 
 ## ✨ Features
 
